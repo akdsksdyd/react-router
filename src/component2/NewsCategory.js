@@ -39,7 +39,7 @@ const NewsCategory = () => {
             {
                 category.map((item, index) => 
                 <li key={index}>
-                    <NavLink to={`/${item.name}`} style={({isActive}) => isActive ? myStyle :  undefined}>{item.topic}</NavLink>
+                    <NavLink to={item.name === 'all' ? '/' : `/${item.name}`} style={({isActive}) => isActive ? myStyle :  undefined}>{item.topic}</NavLink>
                 </li>
                 )
             }
