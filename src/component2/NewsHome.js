@@ -8,7 +8,7 @@ const NewsHome = () => {
         <>
 
             <ul>
-
+                <h3>뉴스홈 테스트</h3>
                 <NewsCategory/>
 
                 <NewsList/>
